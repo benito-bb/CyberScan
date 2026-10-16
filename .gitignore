@@ -150,11 +150,14 @@ activemq-data/
 *.sage.py
 
 # Environments
+.env.*
+!.env.example
 .env
 .envrc
 .venv
 env/
 venv/
+.venv/
 ENV/
 env.bak/
 venv.bak/
@@ -205,8 +208,13 @@ cython_debug/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
+# Outils de test
+.pytest_cache/
+
 # Ruff stuff:
 .ruff_cache/
+.coverage
+htmlcov/
 
 # PyPI configuration file
 .pypirc

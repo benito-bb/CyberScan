@@ -1,0 +1,20 @@
+[project]
+name = "cyberscan"
+version = "0.1.0"
+description = "Application d'analyse de sécurité logicielle"
+requires-python = ">=3.14"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py314"
