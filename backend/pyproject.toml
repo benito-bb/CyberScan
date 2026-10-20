@@ -11,6 +11,10 @@ dev = [
     "ruff",
 ]
 
+scanners = [
+    "bandit>=1.8,<2.0",
+]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
